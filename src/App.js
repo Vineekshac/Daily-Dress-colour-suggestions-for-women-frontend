@@ -6,7 +6,7 @@ function App() {
   const [suggestedColor, setSuggestedColor] = useState('');
 
   const fetchSuggestion = async () => {
-    const response = await fetch('http://localhost:8080/getSuggestion');
+    const response = await fetch('https://daily-dress-color-suggestion-for-women.onrender.com/getSuggestion');
     const data = await response.json();
     setSuggestedColor(data.color);
   };
